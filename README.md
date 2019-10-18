@@ -4,10 +4,10 @@ Send and Search messages via gmailAPI
 
 Gmail API is an API that helps us to create, search, search messages and to manage gmail settings. In this section, the authorize, create, send and search features were implemented in python. Please follow the below steps to use the folder:
 
-Prerequisites
+1. Prerequisites
 
-Python 2.4 or greater (to provide a web server)
-A Google account with Gmail enabled
+   * Python 2.4 or greater (to provide a web server)
+   * A Google account with Gmail enabled
 
 2. Clone or download the folder is the location where you like to work(current working directory - cwd)
 
@@ -26,4 +26,6 @@ https://developers.google.com/gmail/api/quickstart/js#step_1_turn_on_the
 *******************************************************************************************************************************************
                                                          IMPORTANT TO NOTE
 *******************************************************************************************************************************************
-1. While running for the first time, gmail will ask you to ch
+1. While running for the first time, gmail will ask you to ch 
+Go to 
+
