@@ -26,6 +26,10 @@ Gmail API is an API that helps us to create, search, search messages and to mana
 *******************************************************************************************************************************************
                                                          IMPORTANT TO NOTE
 *******************************************************************************************************************************************
-1. While running for the first time, gmail will ask you to ch 
-Go to 
+1. While running for the first time, gmail will give an error message "This app isn't verified". Please do the below steps to allow the application to access the email:
+    * Go to Advanced
+    * Grant permisstion
+    * Allow 
+  Now, the authentication is completed
+2. 
 
