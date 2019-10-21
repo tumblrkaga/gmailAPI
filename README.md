@@ -28,7 +28,7 @@ Gmail API is an API that helps us to create, search, search messages and to mana
 *******************************************************************************************************************************************
 1. While running for the first time, gmail will give an error message "This app isn't verified". Please do the below steps to allow the application to access the email:
     * Go to Advanced
-    * Grant permisstion
+    * Grant permission
     * Allow Now, the authentication is completed
 2. The libraries needed for the application should also be installed by using the below command:
      pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib   
