@@ -7,8 +7,6 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from httplib2 import Http
 from oauth2client import file, client, tools 
-from email.mime.text import MIMEText
-from base64 import urlsafe_b64encode
 
 def authorization( scopes):
     """To authorize the user"""

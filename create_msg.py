@@ -57,7 +57,6 @@ def create_message(sender, to, subject, message_text, file):
     filename = os.path.basename(file)
     msg.add_header('Content-Disposition', 'attachment', filename=filename)
     message.attach(msg)
-
     raw = base64.urlsafe_b64encode(message.as_bytes())
     raw = raw.decode()
     return {'raw': raw}

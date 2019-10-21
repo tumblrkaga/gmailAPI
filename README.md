@@ -7,7 +7,7 @@ Gmail API is an API that helps us to create, search, search messages and to mana
 1. Prerequisites
 
    * Python 2.4 or greater (to provide a web server)
-   * A Google account with Gmail enabled
+   * A Google account with GmailAPI enabled
 
 2. Clone or download the folder is the location where you like to work(current working directory - cwd)
 
@@ -29,7 +29,7 @@ Gmail API is an API that helps us to create, search, search messages and to mana
 1. While running for the first time, gmail will give an error message "This app isn't verified". Please do the below steps to allow the application to access the email:
     * Go to Advanced
     * Grant permisstion
-    * Allow 
-  Now, the authentication is completed
-2. 
+    * Allow Now, the authentication is completed
+2. The libraries needed for the application should also be installed by using the below command:
+     pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib   
 

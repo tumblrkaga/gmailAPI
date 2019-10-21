@@ -27,16 +27,23 @@ class Info:
     @classmethod
     def get_user_input(cls):
         while 1:
-            try:
-                sender = input('Enter sender\'s e-mail:\n')
-                recipient = input('Enter recipient\'s e-mail:\n')
-                subject = input('Enter the subject of the e-mail: \n')
-                content = input('Enter the content of the e-mail: \n')
+            try:                
                 key = input('Preferred task:\n 1. Send an email with attachment \n 2. Search for a message\n Your input: ')
-                return cls(sender, recipient, subject, content, key)
+                if key == '1':
+                    sender = input('Enter sender\'s e-mail:\n')
+                    recipient = input('Enter recipient\'s e-mail:\n')
+                    subject = input('Enter the subject of the e-mail: \n')
+                    content = input('Enter the content of the e-mail: \n')
+                    return cls(sender, recipient, subject, content, key)
+                elif key == '2':
+                    sender = ''
+                    recipient = ''
+                    subject = ''
+                    content = ''
+                    return cls(sender, recipient, subject, content, key)
             except:
                 print('Invalid input!')
-                continue
+                pass
     #The decorator is used to get the user inputs
 
     def main(self):
@@ -51,13 +58,17 @@ class Info:
         (This uses authorization, list_matching_messages and get_msg modules)
         
         """
-
         if(self.key == '1'): 
-            self.file = input("Please enter the file location:\n")
-            self.service = authorization(self.SCOPES)
-            self.message = create_message(self.sender, self.recipient, self.subject, self.content, self.file)
-            send_message(self.service, self.user_id, self.message)
-            
+            while 1:        
+                try:
+                    self.file = input("Please enter the file location:\n")
+                    self.service = authorization(self.SCOPES)
+                    self.message = create_message(self.sender, self.recipient, self.subject, self.content, self.file)
+                    send_message(self.service, self.user_id, self.message)
+                    break 
+                except:
+                    print('File not found! Please enter the correct location')    
+                    
         elif(self.key == '2'):
             self.query = input("Please enter the query you would like to search: \n")            
             self.service = authorization(self.SCOPES)
