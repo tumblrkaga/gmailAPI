@@ -14,7 +14,7 @@ Gmail API is an API that helps us to create, search, search messages and to mana
 3. Enable the Gmail API
 
     Please enable the Gmail API by following the below link:
-    https://developers.google.com/gmail/api/quickstart/js#step_1_turn_on_the
+    https://developers.google.com/gmail/api/quickstart/python
 
 4. After enabling the API, download and save the client configuration as "credentials.json" in the cwd
 
